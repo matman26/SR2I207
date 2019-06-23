@@ -49,8 +49,8 @@ keepalive_header = "X-a: {}\r\n".format(42).encode("utf-8") # Random number to k
 
 def main():
     ip_address = parameters.host
-    #ip_address = "35.204.165.14"
-    port = random.randint(1024,6000) # 4213
+    #port = random.randint(1024,6000) # 4213
+    port = 5000
     ip = IP(dst=ip_address)
     server_port = parameters.port
     list_size = parameters.sockets
